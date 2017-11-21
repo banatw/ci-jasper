@@ -27,7 +27,7 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->library('Jasper');
 
-		$PHPJasperXML = new PHPJasperXML("en","XLS");  //if export excel, can use PHPJasperXML("en","XLS OR XLSX"); 
+		$PHPJasperXML = new PHPJasperXML("en","TCPDF");  //if export excel, can use PHPJasperXML("en","XLS OR XLSX"); 
 
 		$PHPJasperXML->load_xml_file(dirname(__FILE__) . '/sample1.jrxml');
 		$dbdriver="psql";//natively is 'mysql', 'psql', or 'sqlsrv'. the rest will use PDO driver. for oracle, use 'oci'
@@ -35,7 +35,7 @@ class Welcome extends CI_Controller {
 		/*Buat parameter di jasper untuk image path  "image_path" */
 		$PHPJasperXML->arrayParameter = array('image_path'=>dirname(__FILE__));
 		$PHPJasperXML->transferDBtoArray('localhost','ropeg','ropeg12','buat-ngetes-doang',$dbdriver);
-		$PHPJasperXML->outpage('D');  //$PHPJasperXML->outpage('I=render in browser/D=Download/F=save as server side filename according 2nd parameter',
+		$PHPJasperXML->outpage('I');  //$PHPJasperXML->outpage('I=render in browser/D=Download/F=save as server side filename according 2nd parameter',
 		//'filename.pdf or filename.xls or filename.xls depends on constructor');
 	}
 }
