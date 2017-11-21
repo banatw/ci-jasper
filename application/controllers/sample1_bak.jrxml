@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="421" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="381">
+			<rectangle>
+				<reportElement x="0" y="110" width="555" height="244"/>
+			</rectangle>
+			<line>
+				<reportElement x="93" y="110" width="1" height="244"/>
+			</line>
+			<line>
+				<reportElement x="23" y="110" width="1" height="244"/>
+			</line>
+			<line>
+				<reportElement x="450" y="110" width="1" height="244"/>
+			</line>
+		</band>
+	</background>
+	<title>
+		<band/>
+	</title>
+	<pageHeader>
+		<band height="131">
+			<staticText>
+				<reportElement x="0" y="110" width="24" height="20"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="110" width="69" height="20"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="110" width="354" height="20"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="110" width="108" height="20"/>
+				<textElement textAlignment="Center" lineSpacing="Single">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="125" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="93" y="0" width="414" height="41"/>
+				<textElement lineSpacing="Single">
+					<font size="26" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[This is sample report header]]></text>
+			</staticText>
+			<image>
+				<reportElement x="7" y="4" width="76" height="67"/>
+				<imageExpression class="java.lang.String"><![CDATA["./simitlogo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band height="27"/>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="45">
+			<staticText>
+				<reportElement x="5" y="16" width="429" height="20"/>
+				<textElement lineSpacing="Single"/>
+				<text><![CDATA[This is sample report footer]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
